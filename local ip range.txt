@@ -1,0 +1,14 @@
+step1:Finding local ip address using cmd "ipconfig".
+step2:scanning for open ports using"nmap -A<ip>"
+step3:Run wireshark
+step4:Capture packets
+step5:Filter using cmd"ip.addr==1<ip>"
+step6:compare the packet protocal with nmap to find the valid open ports
+step7:search for the vulnerabilities
+ Port         Service                Basic Vulnerabilities / Risks                                                                                                                                                 | |
+ 135/tcp  MSRPC (Microsoft RPC)  - Remote code execution if unpatched (e.g., MS08-067)<br>- Can be exploited to gain
+                                   administrative access remotely<br>- Often targeted by worms and malware                   |
+ 139/tcp  NetBIOS-SSN            - Information leakage (hostnames, shared folders)<br>- Weak authentication
+                                   can allow unauthorized access<br>- Can be used in SMB relay attacks                                |
+ 445/tcp  Microsoft-DS / SMB     - Vulnerable to ransomware attacks (EternalBlue, WannaCry)<br>- Unauthorized access
+                                   to shared files/folders<br>- Can allow remote execution if SMBv1 is enabled and unpatched |
