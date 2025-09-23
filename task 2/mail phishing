@@ -1,0 +1,16 @@
+The key factors that indicate phishing emails:
+     1)The use of social engineering to create urgency and fear.
+     2)Requests for sensitive information like passwords.
+     3)Exploitation of a trusted brand.
+To find whether the email is valid or not, the steps to be taken are:
+     1)First, check the headers.
+     2)Check the sender’s email address.
+     3)Check URLs safely.
+Use these details to determine whether the email is valid or not.
+Example:
+
+This email pretends to be from the FDIC and offers a $50 reward for completing a survey.
+It tries to appear legitimate by claiming the survey is anonymous and secure, 
+but the promise of free money and the request to click a link are classic phishing techniques.
+
+
