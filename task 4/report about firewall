@@ -1,0 +1,26 @@
+action taken:
+
+*Opened Windows Firewall configuration tool.
+*Listed all current firewall rules to see existing settings.
+*Added a rule to block inbound traffic on Telnet (port 23).
+*Added a rule to block inbound traffic on HTTP (port 80).
+*Tested connectivity to port 23 and port 80 to verify they were blocked.
+*Added a rule to allow SSH (port 22) for remote access.
+*Removed the block rule for Telnet (port 23).
+*Removed the block rule for HTTP (port 80).
+
+List all firewall rules
+Use the command: “netsh advfirewall firewall show rule name equals all”
+Block Telnet on port 23
+Use the command: “netsh advfirewall firewall add rule name equals Block Telnet, direction equals in, action equals block, protocol equals TCP, local port equals 23”
+Block HTTP on port 80
+Use the command: “netsh advfirewall firewall add rule name equals Block HTTP, direction equals in, action equals block, protocol equals TCP, local port equals 80”
+Allow SSH on port 22
+Use the command: “netsh advfirewall firewall add rule name equals Allow SSH, direction equals in, action equals allow, protocol equals TCP, local port equals 22”
+Delete the Telnet block rule
+Use the command: “netsh advfirewall firewall delete rule name equals Block Telnet”
+Delete the HTTP block rule
+Use the command: “netsh advfirewall firewall delete rule name equals Block HTTP”
+Test connectivity to blocked ports
+To test Telnet on port 23, use: “Test-NetConnection to localhost on port 23”
+To test HTTP on port 80, use: “Test-NetConnection to localhost on port 80”
