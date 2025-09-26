@@ -1,0 +1,17 @@
+Steps Followed,
+Opened Nessus and created a New Scan using Basic Network Scan.
+Named the scan Local Scan, and set the target as 10.145.59.82 (my machine).
+Saved the configuration and launched the scan.
+Waited for the scan to complete (about 30–60 minutes).
+Reviewed results by severity: Critical, High, Medium, Low, and Informational.
+Exported the report (PDF/CSV) and took screenshots for evidence.
+Documented top vulnerabilities and suggested fixes.
+
+Results:
+Hosts Scanned: 0
+Critical Vulnerabilities: 0
+High Vulnerabilities: 0
+Medium Vulnerabilities: 2
+Low Vulnerabilities: 0
+Informational Findings: 38
+
